@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/newTaskText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:hint="Add New Bucket List"
+        />
+    <Button
+        android:id="@+id/newTaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newTaskText"
+        android:textSize="16dp"
+        android:text="Save new List"
+        android:textAllCaps="false"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/darker_gray"
+></Button>
+    <Button
+        android:id="@+id/date_picker_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_picker_actions"
+        android:textSize="16dp"
+        android:text="Date"
+        android:layout_alignParentEnd="true"
+        android:textAllCaps="false"
+        android:background="@android:color/holo_red_dark"
+        android:textColor="@android:color/darker_gray"
+        android:onClick="datePicker"
+        ></Button>
+</RelativeLayout>
